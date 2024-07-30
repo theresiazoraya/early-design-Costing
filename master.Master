@@ -1,0 +1,361 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="PrototypePortalCosting.master" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_fcF9m55YeY7nGA_Mwm6iA4QpLvs4fUH-4w&s" alt="">
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div>
+        <!-- End Logo -->
+
+
+        <!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+        </nav>
+        <!-- End Icons Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+
+            <!-- End Dashboard Nav -->
+            <%-- Cost by prod --%>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-menu-button-wide"></i><span>Cost By Prod</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="CostByProd.aspx">
+                            <i class="bi bi-circle"></i><span>GP BY PRODUCT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="SummaryCostAllFG.aspx">
+                            <i class="bi bi-circle"></i><span>Summary Cost All FG</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="SelectedPartNumberCostDetail.aspx">
+                            <i class="bi bi-circle"></i><span>Selected Part Number Cost Detail</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="CostComparasion.aspx">
+                            <i class="bi bi-circle"></i><span>Cost Comparison</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <%-- cost by prod end --%>
+
+            <%-- Inventory --%>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#Inventory-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-menu-button-wide"></i><span>Inventory</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="Inventory-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="DetailBeritaAcara.aspx">
+                            <i class="bi bi-circle"></i><span>Detail Berita Acara</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Rollforward.aspx">
+                            <i class="bi bi-circle"></i><span>Rollforward/Rollback</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="RekonSTO.aspx">
+                            <i class="bi bi-circle"></i><span>Rekonsiliasi STO to Ending Inventory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="STODiscrepancies.aspx">
+                            <i class="bi bi-circle"></i><span>STO Discrepancies</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="BeritaAcaraSTO.aspx">
+                            <i class="bi bi-circle"></i><span>Berita Acara STO</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="InventoryAging.aspx">
+                            <i class="bi bi-circle"></i><span>Inventory Aging</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="InventoryAllowance.aspx">
+                            <i class="bi bi-circle"></i><span>Inventory Allowance</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <%-- Inventory End --%>
+
+            <%-- process cost --%>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#processcost-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-menu-button-wide"></i><span>Process Cost</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="processcost-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-bs-target="#SAP-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-menu-button-wide"></i><span>SAP</span><i class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                        <ul id="SAP-nav" class="nav-content collapse" data-bs-parent="#processcost-nav">
+                            <li>
+                                <a class="nav-link" href="COGSFigure.aspx">
+                                    <i class="bi bi-circle"></i><span>COGS Figure</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="RateBySystem.aspx">
+                                    <i class="bi bi-circle"></i><span>Rate By System</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="ReperformStandart.aspx">
+                                    <i class="bi bi-circle"></i><span>Reperform Standard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="ReperformActual.aspx">
+                                    <i class="bi bi-circle"></i><span>Reperform Actual</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="RateComparasion.aspx">
+                                    <i class="bi bi-circle"></i><span>Rate Comparison</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-bs-target="#BAAN-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-menu-button-wide"></i><span>BAAN</span><i class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                        <ul id="BAAN-nav" class="nav-content collapse" data-bs-parent="#processcost-nav">
+                            <li>
+                                <a class="nav-link" href="StandardRate.aspx">
+                                    <i class="bi bi-circle"></i><span>Standard Rate</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="ReperformStandart.aspx">
+                                    <i class="bi bi-circle"></i><span>Reperform Standard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="ReperformActual.aspx">
+                                    <i class="bi bi-circle"></i><span>Reperform Actual</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="RateComparison.aspx">
+                                    <i class="bi bi-circle"></i><span>Rate Comparison</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#.aspx">
+                                    <i class="bi bi-circle"></i><span>COGS(Alokasi)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-bs-target="#otherERP-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-menu-button-wide"></i><span>otherERP</span><i class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                        <ul id="otherERP-nav" class="nav-content collapse" data-bs-parent="#processcost-nav">
+                            <li>
+                                <a class="nav-link" href="#.aspx">
+                                    <i class="bi bi-circle"></i><span>Standard Rate</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#.aspx">
+                                    <i class="bi bi-circle"></i><span>Reperform Standard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#.aspx">
+                                    <i class="bi bi-circle"></i><span>Reperform Actual</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#.aspx">
+                                    <i class="bi bi-circle"></i><span>Rate Comparison</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <%-- process cost end --%>
+
+            <%-- Rekomendasi --%>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#rekomendasi-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-menu-button-wide"></i><span>Rekomendasi (Admin)</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="rekomendasi-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="SummaryProgress.aspx">
+                            <i class="bi bi-circle"></i><span>Summary Progress All Affco</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="DetailRekomendasi.aspx">
+                            <i class="bi bi-circle"></i><span>Detail Rekomendasi</span>
+                        </a>
+                    </li>
+                    <%--<li>
+                        <a href="StatusImplementasiAdmin.aspx">
+                            <i class="bi bi-circle"></i><span>Status Implementasi Rekomendasi</span>
+                        </a>
+                    </li>--%>
+                    <li>
+                        <a href="DashboardProgress.aspx">
+                            <i class="bi bi-circle"></i><span>Summary Progress</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#RekomAffco-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-menu-button-wide"></i><span>Rekomendasi (Affco)</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="RekomAffco-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="StatusImplementasi.aspx">
+                            <i class="bi bi-circle"></i><span>Status Implementasi</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <%-- Rekomendasi End --%>
+
+            <!-- End Components Nav -->
+
+
+        </ul>
+
+    </aside>
+    <!-- End Sidebar-->
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
